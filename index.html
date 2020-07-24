@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+</head>
+<body>
+  <h1>Task1</h1>
+  <a href="#" onclick="alert('Thank You For visiting')">For Products</a>
+ 
+  <br>
+ 
+ 
+ 
+  <h1>Task2</h1>
+ 
+  
+  <div class="container">
+ 
+     <div class="row">
+      
+       <div class="col-sm-12 col-md-3">
+         <div class="thumbnail">
+             <a href="#" onclick="alert('Thanks for purchsing a phone from us')">
+             <img src="images/3.jpg" alt="Lights" style="width:100%">
+ 
+           </a>
+         </div>
+       </div>
+       <div class="col-sm-12 col-md-3">
+         <div class="thumbnail">
+             <a href="#" onclick="alert('Thanks for purchsing a phone from us')">
+             <img src="images/1.jpg" alt="Nature" style="width:100%">
+ 
+           </a>
+         </div>
+       </div>
+       <div class="col-sm-12 col-md-3">
+         <div class="thumbnail"></div>
+         <a href="#" onclick="alert('Thanks for purchsing a phone from us')">
+             <img src="images/2.jpg" alt="Fjords" style="width:100%">
+ 
+           </a>
+         </div>
+         <div class=" col-sm-12 col-md-3">
+             <div class="thumbnail"></div>
+               <a href="#" onclick="alert('Thanks for purchsing a phone from us')">
+                 <img src="images/2.jpg" alt="Fjords" style="width:100%">
+     
+               </a>
+             </div>
+       </div>
+     </div>
+   </div>
+ 
+   
+ 
+ 
+ 
+ 
+ </div>
+ 
+ 
+ <div>
+ 
+ 
+ <h1>Task3</h1>
+ 
+ 
+ <table>
+ 
+ <th>Index</th>
+ <th>Name</th>
+ <th>Class</th>
+ <th>Delete</th>
+ 
+ <tr id="del1">
+ <td>0</td>
+ <td>Johne</td>
+ <td>10</td>
+ <td><button onclick="delRow1()" >Delete</button></td>
+ </tr>
+ 
+ 
+ <tr id="del2">
+   <td>1</td>
+   <td>Doe</td>
+   <td>9</td>
+   <td><button onclick="delRow2()" >Delete</button></td>
+   </tr>
+ 
+   <tr id="del3">
+     <td>2</td>
+     <td>James</td>
+     <td>8</td>
+     <td><button onclick="delRow3()" >Delete</button></td>
+     </tr>
+ 
+ </table>
+ 
+ </div>
+ 
+ 
+ 
+ <br>
+ <br>
+ 
+ <h1>Task4</h1>
+ 
+ <img  src="images/sample6.jpg" 
+ id="img"
+  onmouseout="changeimage('img','images/sample6.jpg')"
+   onmouseover="changeimage('img','images/sample7.jpg')"   
+        alt="" width="400" height="400" >
+ 
+        <br>
+        <br>
+        
+        <h1>Task5</h1>
+        <br>
+        <br>
+   <div  class="bg-danger text-white align rounded-pill ">
+        <p  class = "baseline" >Clicks: <a id="clicks">12</a></p>
+     
+         <button type="button" class="btn btn-success baseline"onClick="increase()" >Increase</button>
+         <button type="button" class="btn btn-info baseline" onClick="decrease()">Decrease</button>
+       </div>
+ 
+         <h1>chapters49-52 Task1</h1>
+        
+   <div class="bg-warning text-white">
+     <fieldset>
+       <legend><h1>Registration</h1></legend>
+         <form class="margin"  >
+           <div class="agile-field-txt">
+           <input type="text" name="Name" id="txtName" placeholder="First Name">
+           
+           <br>
+           <input type="text" name="Name" id="lastname" placeholder="Last Name">
+ <br>
+           <input type="text" name="Email" id="txtEmail" placeholder="Email">
+           <br>
+           <input type="password" name="Name" id="password" placeholder="password">
+          <br>
+           <button type="button" value="Submit"  id="btnSubmit"  class="btn btn-secondary"  onclick="getData()">Submit</button>
+       </form>
+      </fieldset>
+       <div>
+           <p id="p1"></p>
+           <p id="p2"></p>
+           <p id="p3"></p>
+           <p id="p4"></p>
+       </div>
+   
+     </div>
+ 
+ 
+ 
+     
+       <br>
+       <br>
+ 
+       <h1>chapters49-52 Task2</h1>
+       <p id="txt" class="hide">
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum non iste sunt architecto nam, magni quisquam maxime reprehenderit totam nemo saepe perspiciatis laborum aperiam consectetur. Sapiente officia rerum ex dicta.
+     </p>
+ 
+       <p id="pera">
+         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+         <a href="javascript:void(0)" onclick="readMore()">Read more</a>
+     </p>
+ 
+     <h1>chapters49-52 Task3</h1>
+ 
+     <table>
+       <tr>
+           <td>
+               <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                   <div>
+                       <label>index*</label><label class="validation-error hide" id="indexValidationError">This field is required.</label>
+                       <input type="text" name="index" id="index">
+                   </div>
+                   <div>
+                       <label>Name</label>
+                       <input type="text" name="fname" id="fname">
+                   </div>
+                 
+                   <div>
+                       <label>Class</label>
+                       <input type="text" name="Class" id="Class">
+                   </div>
+                   <div  class="form-action-buttons">
+                       <input type="submit" value="Submit" class="btn btn-secondary">
+                   </div>
+               </form>
+           </td>
+           <td>
+               <table class="list" id="employeeList">
+                   <thead>
+                       <tr>
+                           <th>index</th>
+                           <th>Name</th>
+                         
+                          
+                           <th >Class</th>
+                           <th>Del/Edit</th>
+                
+                       </tr>
+                   </thead>
+                   <tbody>
+ 
+                   </tbody>
+               </table>
+           </td>
+       </tr>
+   </table>
+ </div>
+ <br>
+ <br>
+ 
+ <h1>Chapter 53-58 Task1</h1>
+ 
+ 
+ <!-- Trigger the Modal -->
+ <img id="myImg" src="image/1.jpg" alt="Snow" style="width:100%;max-width:300px">
+ 
+ <!-- The Modal -->
+ <div id="myModal" class="modal">
+ 
+   <!-- The Close Button -->
+   <span class="close">&times;</span>
+ 
+   <!-- Modal Content (The Image) -->
+   <img class="modal-content" id="img01">
+ 
+   <!-- Modal Caption (Image Text) -->
+   <div id="caption"></div>
+ </div>
+ 
+ 
+ <h1>Chapter 53-58 Task2</h1>
+ 
+ 
+ <div>
+ 
+ <p id="fontStyle">
+   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea vitae quisquam laudantium numquam dolor a deserunt enim molestias, ex, excepturi laborum non, incidunt officia culpa? Eligendi similique necessitatibus quidem illum!
+ </p>
+ 
+ <button onclick="zoomIn()">Zom in</button>
+ <button onclick="zoomOut()">Zom out</button>
+ </div>
+ 
+ <h1>Chapter 58-67 Task2</h1>
+ <div>
+    <h1> DOM </h1> 
+    <div id="form-content" class="content">
+       <label for="first-name">First Name</label>
+        <input type="text" id="first-name" /> 
+        <label for="last-name">Last Name</label>
+         <input type="text" id="last-name" />
+          <label for="email">Email</label>
+           <input type="text" id="email" />
+          </div>
+           <div id="main-content" class="content">
+             <p class="render" id="firstname"> First Name : Alex</p>
+              <p class="render" id="lastname">Last Name: Bank</p> 
+              <p class="render"id="email"> Email : alexbank@example.com</p> 
+              <p class="render"> Country : Pakistan </p>
+               <p class="render"> contact : +92 300 1234567</p>
+              </div> 
+             </div> 
+ 
+         
+             <button onclick="setName()">set your name</button>
+ 
+ 
+ 
+</body>
+script>
+    alert("Iam using Alert after pages's html!  \n CHAPTER:1 This is task 7(part4)")
+
+</script>  
+
+<h3>Above task is from Chapter14-16 This is task 15 </h3>
+<script>
+  
+    var select = document.getElementById("select"),
+   mobile = ["Apple", "Samsung", "Motorola", "Nokia", "Sony" , "Haier"];
+
+
+   for (i = 0; i<mobile.length; i++){
+
+
+      var option =  document.createElement("option"),
+      txt = document.createTextNode(mobile[i]);
+
+      option.appendChild(txt);
+      select.insertBefore(option,select.lastChild);
+
+
+   }
+</script>
+</html>
